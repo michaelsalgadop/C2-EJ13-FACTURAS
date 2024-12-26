@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Mis Facturas</title>
+    <script src="js/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <section class="principal container-fluid">
+      <header class="cabecera row">
+        <h2 class="col">Listado de ingresos</h2>
+      </header>
+      <main>
+        <div class="row">
+          <div class="info-listado info-listado-top col text-right">
+            <label>
+              Buscar
+              <input type="text" class="form-control form-control-sm" />
+            </label>
+          </div>
+        </div>
+        <table class="listado table table-striped table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th class="col-min">Num.</th>
+              <th class="col-med">Fecha</th>
+              <th class="col-concepto">Concepto</th>
+              <th class="col-med">Base</th>
+              <th class="col-max">IVA</th>
+              <th class="col-med">Total</th>
+              <th class="col-max">Estado</th>
+              <th class="col-max">Vence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="factura factura-dummy">
+              <td class="numero"></td>
+              <td class="fecha"></td>
+              <td class="concepto"></td>
+              <td class="base"></td>
+              <td class="iva"></td>
+              <td class="total"></td>
+              <td class="estado"></td>
+              <td class="vence"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th class="text-right" colspan="3">Totales:</th>
+              <td class="total-base"></td>
+              <td class="total-iva"></td>
+              <td class="total-facturas"></td>
+              <td colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+    </section>
+    <div class="loading off">
+      <img src="img/loading.svg" alt="cargando" />
+    </div>
+  </body>
+</html>
